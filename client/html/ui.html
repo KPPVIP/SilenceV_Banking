@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>By Dawen</title>
+<style id="applicationStylesheet" type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+	display:  show;
+	user-select: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+* {
+	font-family: Poppins;
+}
+@-webkit-keyframes flip-in-hor-bottom {
+  0% {
+    -webkit-transform: rotateX(80deg);
+            transform: rotateX(80deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+    opacity: 1;
+  }
+}
+@keyframes flip-in-hor-bottom {
+  0% {
+    -webkit-transform: rotateX(80deg);
+            transform: rotateX(80deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+    opacity: 1;
+  }
+}
+	.mediaViewInfo {
+		--web-view-name: Canvas;
+		--web-view-id: Canvas;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: width;
+		--web-enable-scale-up: true;
+		--web-scale-on-resize: true;
+		--web-center-vertically: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Canvas;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Canvas {
+		position: absolute;
+		width: 1920px;
+		height: 1080px;
+		background-color: rgba(0,0,0,0);
+		overflow: hidden;
+		--web-view-name: Canvas;
+		--web-view-id: Canvas;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: width;
+		--web-enable-scale-up: true;
+		--web-scale-on-resize: true;
+		--web-center-vertically: true;
+		--web-enable-deep-linking: true;
+	}
+	#banking {
+		-webkit-animation: flip-in-hor-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: flip-in-hor-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+		position: absolute;
+		width: 980px;
+		height: 573px;
+		left: 470px;
+		top: 254px;
+		overflow: visible;
+	}
+	#mainn {
+		position: absolute;
+		width: 980px;
+		height: 573px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#close {
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		left: 17.99px;
+		top: 520px;
+		overflow: visible;
+	}
+	#aaaaaaaaaaaaaaaa_4 {
+		fill: rgba(33,33,33,1);
+	}
+	.aaaaaaaaaaaaaaaa_4 {
+		position: absolute;
+		overflow: visible;
+		width: 30px;
+		height: 30px;
+		left: 0px;
+		top: 0px;
+	}
+	#x_1 {
+		position: absolute;
+		width: 8px;
+		height: 8px;
+		left: 10.01px;
+		top: 11px;
+		overflow: visible;
+	}
+	#logo {
+		position: absolute;
+		width: 36.667px;
+		height: 40px;
+		left: 13.667px;
+		top: 26.59px;
+		overflow: visible;
+	}
+	#B_A_N_K {
+		position: absolute;
+		width: 11px;
+		height: 125px;
+		left: 27px;
+		top: 224px;
+		overflow: visible;
+	}
+	#status {
+		position: absolute;
+		width: 352px;
+		height: 205px;
+		left: 138px;
+		top: 317px;
+		overflow: visible;
+	}
+	#Gruppe_23 {
+		opacity: 0.11;
+		position: absolute;
+		width: 352px;
+		height: 40px;
+		left: 0px;
+		top: 131px;
+		overflow: visible;
+	}
+	#aaaaaaaaaaaaaaaa_5 {
+		fill: rgba(0,0,0,0);
+		stroke: rgb(255, 0, 0);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 100;
+		shape-rendering: auto;
+	}
+	.aaaaaaaaaaaaaaaa_5 {
+		position: absolute;
+		overflow: visible;
+		width: 352px;
+		height: 40px;
+		left: 0px;
+		top: 0px;
+	}
+	#refresh-cw {
+		position: absolute;
+		width: 16px;
+		height: 14px;
+		left: 14px;
+		top: 13px;
+		overflow: visible;
+	}
+	#Gruppe_22 {
+		position: absolute;
+		width: 297px;
+		height: 20px;
+		left: 44px;
+		top: 10px;
+		overflow: visible;
+	}
+	#Auszahlung__21062021_-_1832 {
+		left: 0px;
+		top: 1px;
+		position: absolute;
+		overflow: visible;
+		width: 147px;
+		white-space: nowrap;
+		line-height: 15.000000953674316px;
+		margin-top: -1.2500004768371582px;
+		text-align: left;
+		font-family: Poppins-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12.5px;
+		color: rgba(255,255,255,1);
+	}
+	#n__120482_ {
+		left: 220px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 78px;
+		white-space: nowrap;
+		line-height: 17.499996185302734px;
+		margin-top: -1.4583330154418945px;
+		text-align: left;
+		font-family: Poppins-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14.583330154418945px;
+		color: rgba(255, 0, 0);
+	}
+	#Gruppe_23_u {
+		position: absolute;
+		width: 352px;
+		height: 40px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#aaaaaaaaaaaaaaaa_5_v {
+		fill: rgba(0,0,0,0);
+		stroke: rgba(255, 0, 0);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 100;
+		shape-rendering: auto;
+	}
+	.aaaaaaaaaaaaaaaa_5_v {
+		position: absolute;
+		overflow: visible;
+		width: 352px;
+		height: 40px;
+		left: 0px;
+		top: 0px;
+	}
+	#refresh-cw_w {
+		position: absolute;
+		width: 16px;
+		height: 14px;
+		left: 14px;
+		top: 13px;
+		overflow: visible;
+	}
+	#Gruppe_22_x {
+		position: absolute;
+		width: 297px;
+		height: 20px;
+		left: 44px;
+		top: 10px;
+		overflow: visible;
+	}
+	#Auszahlung__21062021_-_1832_y {
+		left: 0px;
+		top: 1px;
+		position: absolute;
+		overflow: visible;
+		width: 147px;
+		white-space: nowrap;
+		line-height: 15.000000953674316px;
+		margin-top: -1.2500004768371582px;
+		text-align: left;
+		font-family: Poppins-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12.5px;
+		color: rgba(255,255,255,1);
+	}
+	#n__120482__z {
+		left: 220px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 78px;
+		white-space: nowrap;
+		line-height: 17.499996185302734px;
+		margin-top: -1.4583330154418945px;
+		text-align: left;
+		font-family: Poppins-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14.583330154418945px;
+		color: rgba(255, 0, 0);
+	}
+	#Gruppe_23_ {
+		position: absolute;
+		width: 352px;
+		height: 40px;
+		left: 0px;
+		top: 50px;
+		overflow: visible;
+	}
+	#aaaaaaaaaaaaaaaa_5_ {
+		fill: rgba(0,0,0,0);
+		stroke: rgba(255, 0, 0);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 100;
+		shape-rendering: auto;
+	}
+	.aaaaaaaaaaaaaaaa_5_ {
+		position: absolute;
+		overflow: visible;
+		width: 352px;
+		height: 40px;
+		left: 0px;
+		top: 0px;
+	}
+	#refresh-cw_ {
+		position: absolute;
+		width: 16px;
+		height: 14px;
+		left: 14px;
+		top: 13px;
+		overflow: visible;
+	}
+	#Gruppe_22_ {
+		position: absolute;
+		width: 297px;
+		height: 20px;
+		left: 44px;
+		top: 10px;
+		overflow: visible;
+	}
+	#Auszahlung__21062021_-_1832_ {
+		left: 0px;
+		top: 1px;
+		position: absolute;
+		overflow: visible;
+		width: 147px;
+		white-space: nowrap;
+		line-height: 15.000000953674316px;
+		margin-top: -1.2500004768371582px;
+		text-align: left;
+		font-family: Poppins-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12.5px;
+		color: rgba(255,255,255,1);
+	}
+	#n__120482__ {
+		left: 220px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 78px;
+		white-space: nowrap;
+		line-height: 17.499996185302734px;
+		margin-top: -1.4583330154418945px;
+		text-align: left;
+		font-family: Poppins-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14.583330154418945px;
+		color: rgba(255, 0, 0);
+	}
+	#Gruppe_23_ba {
+		position: absolute;
+		width: 352px;
+		height: 40px;
+		left: 0px;
+		top: 100px;
+		overflow: visible;
+	}
+	#aaaaaaaaaaaaaaaa_5_ba {
+		fill: rgba(0,0,0,0);
+		stroke: rgba(255, 0, 0);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 100;
+		shape-rendering: auto;
+	}
+	.aaaaaaaaaaaaaaaa_5_ba {
+		position: absolute;
+		overflow: visible;
+		width: 352px;
+		height: 40px;
+		left: 0px;
+		top: 0px;
+	}
+	#refresh-cw_ba {
+		position: absolute;
+		width: 16px;
+		height: 14px;
+		left: 14px;
+		top: 13px;
+		overflow: visible;
+	}
+	#Gruppe_22_ba {
+		position: absolute;
+		width: 297px;
+		height: 20px;
+		left: 44px;
+		top: 10px;
+		overflow: visible;
+	}
+	#Auszahlung__21062021_-_1832_ba {
+		left: 0px;
+		top: 1px;
+		position: absolute;
+		overflow: visible;
+		width: 147px;
+		white-space: nowrap;
+		line-height: 15.000000953674316px;
+		margin-top: -1.2500004768371582px;
+		text-align: left;
+		font-family: Poppins-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12.5px;
+		color: rgba(255,255,255,1);
+	}
+	#n__120482__bb {
+		left: 220px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 78px;
+		white-space: nowrap;
+		line-height: 17.499996185302734px;
+		margin-top: -1.4583330154418945px;
+		text-align: left;
+		font-family: Poppins-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14.583330154418945px;
+		color: rgba(255, 0, 0);
+	}
+	#rotate-ccw {
+		position: absolute;
+		width: 15px;
+		height: 14px;
+		left: 154px;
+		top: 191px;
+		overflow: visible;
+	}
+	#chart {
+		position: absolute;
+		width: 422px;
+		height: 190px;
+		left: 106px;
+		top: 63px;
+		overflow: visible;
+	}
+	#card {
+		position: absolute;
+		width: 311px;
+		height: 197px;
+		left: 615px;
+		top: 49px;
+		overflow: visible;
+	}
+	#card_bf {
+		position: absolute;
+		width: 291px;
+		height: 143px;
+		left: 625px;
+		top: 75px;
+		overflow: visible;
+	}
+	#Kontoinhaber {
+		left: 646px;
+		top: 171px;
+		position: absolute;
+		overflow: visible;
+		width: 89px;
+		white-space: nowrap;
+		line-height: 12.500004768371582px;
+		margin-top: -1.0416674613952637px;
+		text-align: left;
+		font-family: Poppins-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10.416669845581055px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 1.5px;
+	}
+	#meerbidesign {
+		left: 645px;
+		top: 185px;
+		position: absolute;
+		overflow: visible;
+		width: 94px;
+		white-space: nowrap;
+		line-height: 12.500004768371582px;
+		margin-top: -1.0416674613952637px;
+		text-align: left;
+		font-family: Poppins-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10.416669845581055px;
+		color: rgba(255, 0, 0);
+		letter-spacing: 1.5px;
+	}
+	#control {
+		position: absolute;
+		width: 422px;
+		height: 160px;
+		left: 525px;
+		top: 317px;
+		overflow: visible;
+	}
+	#abheben {
+		position: absolute;
+		width: 422px;
+		height: 42px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#n_10000 {
+		left: 23px;
+		top: 12px;
+		position: absolute;
+		overflow: visible;
+		width: 60px;
+		white-space: nowrap;
+		line-height: 28px;
+		margin-top: -6.708334922790527px;
+		text-align: left;
+		font-family: Poppins-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14.583330154418945px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 0.2px;
+	}
+	#aaaaaaaaaaaaaaaa_15 {
+		fill: rgba(0,0,0,0);
+		stroke: rgba(255, 0, 0);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 100;
+		shape-rendering: auto;
+	}
+	.aaaaaaaaaaaaaaaa_15 {
+		position: absolute;
+		overflow: visible;
+		width: 422px;
+		height: 42px;
+		left: 0px;
+		top: 0px;
+	}
+	#Gruppe_34 {
+		position: absolute;
+		width: 109px;
+		height: 27px;
+		left: 298px;
+		top: 8px;
+		overflow: visible;
+	}
+	#aaaaaaaaaaaaaaaa_14 {
+		fill: rgba(255, 0, 0);
+	}
+	.aaaaaaaaaaaaaaaa_14 {
+		position: absolute;
+		overflow: visible;
+		width: 109px;
+		height: 27px;
+		left: 0px;
+		top: 0px;
+	}
+	#Abheben_bo {
+		left: 24px;
+		top: 4px;
+		position: absolute;
+		overflow: visible;
+		width: 59px;
+		white-space: nowrap;
+		line-height: 28px;
+		margin-top: -7.75px;
+		text-align: left;
+		font-family: Poppins-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12.5px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 0.2px;
+	}
+	#einzahlen {
+		position: absolute;
+		width: 422px;
+		height: 42px;
+		left: 0px;
+		top: 60px;
+		overflow: visible;
+	}
+	#n_10000_bq {
+		left: 23px;
+		top: 12px;
+		position: absolute;
+		overflow: visible;
+		width: 60px;
+		white-space: nowrap;
+		line-height: 28px;
+		margin-top: -6.708334922790527px;
+		text-align: left;
+		font-family: Poppins-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14.583330154418945px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 0.2px;
+	}
+	#aaaaaaaaaaaaaaaa_15_br {
+		fill: rgba(0,0,0,0);
+		stroke: rgba(255, 0, 0);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 100;
+		shape-rendering: auto;
+	}
+	.aaaaaaaaaaaaaaaa_15_br {
+		position: absolute;
+		overflow: visible;
+		width: 422px;
+		height: 42px;
+		left: 0px;
+		top: 0px;
+	}
+	#Gruppe_34_bs {
+		position: absolute;
+		width: 109px;
+		height: 27px;
+		left: 298px;
+		top: 8px;
+		overflow: visible;
+	}
+	#aaaaaaaaaaaaaaaa_14_bt {
+		fill: rgba(255, 0, 0);
+	}
+	.aaaaaaaaaaaaaaaa_14_bt {
+		position: absolute;
+		overflow: visible;
+		width: 109px;
+		height: 27px;
+		left: 0px;
+		top: 0px;
+	}
+	#Einzahlen_bu {
+		left: 24px;
+		top: 4px;
+		position: absolute;
+		overflow: visible;
+		width: 61px;
+		white-space: nowrap;
+		line-height: 28px;
+		margin-top: -7.75px;
+		text-align: left;
+		font-family: Poppins-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12.5px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 0.2px;
+	}
+	#nicht {
+		position: absolute;
+		width: 422px;
+		height: 42px;
+		left: 0px;
+		top: 118px;
+		overflow: visible;
+	}
+	#berweisen {
+		opacity: 0.149;
+		position: absolute;
+		width: 422px;
+		height: 42px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#n_10000_bx {
+		left: 23px;
+		top: 12px;
+		position: absolute;
+		overflow: visible;
+		width: 60px;
+		white-space: nowrap;
+		line-height: 28px;
+		margin-top: -6.708334922790527px;
+		text-align: left;
+		font-family: Poppins-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14.583330154418945px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 0.2px;
+	}
+	#meerbidesign_by {
+		left: 112px;
+		top: 11px;
+		position: absolute;
+		overflow: visible;
+		width: 100px;
+		white-space: nowrap;
+		line-height: 28px;
+		margin-top: -7.333334922790527px;
+		text-align: left;
+		font-family: Poppins-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13.333330154418945px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 0.2px;
+	}
+	#aaaaaaaaaaaaaaaa_16 {
+		fill: rgba(255, 0, 0);
+	}
+	.aaaaaaaaaaaaaaaa_16 {
+		position: absolute;
+		overflow: visible;
+		width: 2px;
+		height: 26px;
+		left: 96px;
+		top: 8px;
+	}
+	#aaaaaaaaaaaaaaaa_15_b {
+		fill: rgba(0,0,0,0);
+		stroke: rgba(255, 0, 0);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 100;
+		shape-rendering: auto;
+	}
+	.aaaaaaaaaaaaaaaa_15_b {
+		position: absolute;
+		overflow: visible;
+		width: 422px;
+		height: 42px;
+		left: 0px;
+		top: 0px;
+	}
+	#Gruppe_34_b {
+		position: absolute;
+		width: 109px;
+		height: 27px;
+		left: 298px;
+		top: 8px;
+		overflow: visible;
+	}
+	#aaaaaaaaaaaaaaaa_14_b {
+		fill: rgba(255, 0, 0);
+	}
+	.aaaaaaaaaaaaaaaa_14_b {
+		position: absolute;
+		overflow: visible;
+		width: 109px;
+		height: 27px;
+		left: 0px;
+		top: 0px;
+	}
+	#berweisen_b {
+		left: 19px;
+		top: 4px;
+		position: absolute;
+		overflow: visible;
+		width: 76px;
+		white-space: nowrap;
+		line-height: 28px;
+		margin-top: -7.75px;
+		text-align: left;
+		font-family: Poppins-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12.5px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 0.2px;
+	}
+	#Nicht_verfgbar {
+		left: 154px;
+		top: 11px;
+		position: absolute;
+		overflow: visible;
+		width: 108px;
+		white-space: nowrap;
+		line-height: 28px;
+		margin-top: -7.333334922790527px;
+		text-align: left;
+		font-family: Poppins-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13.333330154418945px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 0.2px;
+	}
+	#kontosss {
+		position: absolute;
+		width: 175px;
+		height: 21px;
+		left: 684px;
+		top: 247px;
+		overflow: visible;
+	}
+	#Kontostand_-_ {
+		left: 0px;
+		top: 2px;
+		position: absolute;
+		overflow: visible;
+		width: 95px;
+		white-space: nowrap;
+		line-height: 28px;
+		margin-top: -7.333334922790527px;
+		text-align: left;
+		font-family: Poppins-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13.333330154418945px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 0.2px;
+	}
+	#n_324242_ {
+		left: 96px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 80px;
+		white-space: nowrap;
+		line-height: 28px;
+		margin-top: -6.708334922790527px;
+		text-align: left;
+		font-family: Poppins-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14.583330154418945px;
+		color: rgba(255, 0, 0);
+		letter-spacing: 0.2px;
+	}
+	textarea:focus, input:focus{
+    outline: none;
+}
+*:focus {
+    outline: none;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+  background: rgb(43, 39, 39);
+  margin: 0;
+  border: 0;
+}
+#amount,
+#amountw,
+#amountt,
+#to {
+	z-index: 100;
+    background: transparent;
+    outline: none;
+    font-size: 0.7rem;
+    color: #a7a4a4;
+    margin-left: -40px;
+	margin-top: -5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-align: center;
+    width: 150px;
+}
+button{
+	cursor: pointer;
+	border: 0;
+}
+.btn{
+	background-color:#ff0000;
+	border-radius:6px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:13px;
+	margin-left: -21px;
+	margin-top: 3px;
+	padding:4px 22px;
+	text-decoration:none;
+
+}
+.btn:hover{
+	background-color: white;
+	color:#111;
+}
+</style>
+<script id="applicationScript" type="text/javascript" src="rescale.js"></script>
+</head>
+<body>
+<div id="Canvas">
+	<div id="banking">
+		<img id="mainn" src="https://cdn.discordapp.com/attachments/788240573382787114/881062574425251840/mainn.png">
+		<button class="btn-sign-out">
+			<div id="close">
+				<svg class="aaaaaaaaaaaaaaaa_4">
+					<rect id="aaaaaaaaaaaaaaaa_4" rx="5" ry="5" x="0" y="0" width="30" height="30">
+					</rect>
+				</svg>
+				<img id="x_1" src="https://cdn.discordapp.com/attachments/788240573382787114/881062567261384714/x_1.png">
+					
+			</div>
+		</button>
+		<img id="logo" src="https://cdn.discordapp.com/attachments/893461815135182888/894007150043623454/Logo.png">
+			
+		<img id="B_A_N_K" src="https://cdn.discordapp.com/attachments/833939161898942525/893699379108663326/B_A_N_K.png">
+			
+		<div id="status">
+			<div id="Gruppe_23">
+				<svg class="aaaaaaaaaaaaaaaa_5">
+					<rect id="aaaaaaaaaaaaaaaa_5" rx="5" ry="5" x="0" y="0" width="352" height="40">
+					</rect>
+				</svg>
+				<img id="refresh-cw" src="https://cdn.discordapp.com/attachments/788240573382787114/881062575389937734/refresh-cw.png">
+					
+				<div id="Gruppe_22">
+					<div id="Auszahlung__21062021_-_1832">
+						<span>Auszahlung </span><span style="font-size:8.333330154418945px;color:rgba(169,169,169,1);"> 21.06.2021 - 18:32</span>
+					</div>
+					<div id="n__120482_">
+						<span>- 120.482 $</span>
+					</div>
+				</div>
+			</div>
+			<div id="Gruppe_23_u">
+				<svg class="aaaaaaaaaaaaaaaa_5_v">
+					<rect id="aaaaaaaaaaaaaaaa_5_v" rx="5" ry="5" x="0" y="0" width="352" height="40">
+					</rect>
+				</svg>
+				<img id="refresh-cw_w" src="https://cdn.discordapp.com/attachments/788240573382787114/881062575389937734/refresh-cw.png">
+					
+				<div id="Gruppe_22_x">
+					<div id="Auszahlung__21062021_-_1832_y">
+						<span>Auszahlung </span><span style="font-size:8.333330154418945px;color:rgba(169,169,169,1);"> 21.06.2021 - 18:32</span>
+					</div>
+					<div id="n__120482__z">
+						<span>- 120.482 $</span>
+					</div>
+				</div>
+			</div>
+			<div id="Gruppe_23_">
+				<svg class="aaaaaaaaaaaaaaaa_5_">
+					<rect id="aaaaaaaaaaaaaaaa_5_" rx="5" ry="5" x="0" y="0" width="352" height="40">
+					</rect>
+				</svg>
+				<img id="refresh-cw_" src="https://cdn.discordapp.com/attachments/788240573382787114/881062575389937734/refresh-cw.png">
+					
+				<div id="Gruppe_22_">
+					<div id="Auszahlung__21062021_-_1832_">
+						<span>Auszahlung </span><span style="font-size:8.333330154418945px;color:rgba(169,169,169,1);"> 21.06.2021 - 18:32</span>
+					</div>
+					<div id="n__120482__">
+						<span>- 120.482 $</span>
+					</div>
+				</div>
+			</div>
+			<div id="Gruppe_23_ba">
+				<svg class="aaaaaaaaaaaaaaaa_5_ba">
+					<rect id="aaaaaaaaaaaaaaaa_5_ba" rx="5" ry="5" x="0" y="0" width="352" height="40">
+					</rect>
+				</svg>
+				<img id="refresh-cw_ba" src="https://cdn.discordapp.com/attachments/788240573382787114/881062575389937734/refresh-cw.png">
+					
+				<div id="Gruppe_22_ba">
+					<div id="Auszahlung__21062021_-_1832_ba">
+						<span>Auszahlung </span><span style="font-size:8.333330154418945px;color:rgba(169,169,169,1);"> 21.06.2021 - 18:32</span>
+					</div>
+					<div id="n__120482__bb">
+						<span>- 120.482 $</span>
+					</div>
+				</div>
+			</div>
+			<img id="rotate-ccw" src="https://cdn.discordapp.com/attachments/788240573382787114/881062577059266560/rotate-ccw.png">
+				
+		</div>
+		<img id="chart" src="https://cdn.discordapp.com/attachments/833939161898942525/893699997575557160/chart.png">
+			
+		<img id="card" src="https://cdn.discordapp.com/attachments/833939161898942525/893700430540963870/card.png">
+			
+		<img id="card_bf" src="https://cdn.discordapp.com/attachments/833939161898942525/893700885027373056/card_bf.png">
+			
+		<div id="Kontoinhaber">
+			<span>Kontoinhaber</span>
+		</div>
+		<div id="meerbidesign">
+			<span class="username1"></span>
+		</div>
+		<div id="control">
+			<form id="withdraw1">
+				<div id="abheben">
+					<div id="n_10000">
+						<input id="amountw" type="number" placeholder="0 $">
+					</div>
+					<svg class="aaaaaaaaaaaaaaaa_15" style="pointer-events: none;">
+						<rect id="aaaaaaaaaaaaaaaa_15" rx="10" ry="10" x="0" y="0" width="422" height="42">
+						</rect>
+					</svg>
+					<div id="Gruppe_34">
+						<div id="Abheben_bo">
+							<button class="btn btn-green" type="submit">
+							<span>Abheben</span>
+						</div>
+					</div>
+				</div>
+			</form>
+			<form id="deposit1">
+				<div id="einzahlen">
+					<div id="n_10000_bq">
+						<b><input id="amount" type="number" placeholder="0 $"></b>
+					</div>
+					<svg class="aaaaaaaaaaaaaaaa_15_br" style="pointer-events: none;">
+						<rect id="aaaaaaaaaaaaaaaa_15_br" rx="10" ry="10" x="0" y="0" width="422" height="42">
+						</rect>
+					</svg>
+					<div id="Gruppe_34_bs">
+						<div id="Einzahlen_bu">
+							<button class="btn" type="submit">
+							<span>Einzahlen</span>
+						</div>
+					</div>
+				</div>
+			</form>
+			<div id="nicht">
+				<div id="berweisen">
+					<div id="n_10000_bx">
+						<span>$ 100.00</span>
+					</div>
+					<div id="meerbidesign_by">
+						<span></span>
+					</div>
+					<svg class="aaaaaaaaaaaaaaaa_16">
+						<rect id="aaaaaaaaaaaaaaaa_16" rx="1" ry="1" x="0" y="0" width="2" height="26">
+						</rect>
+					</svg>
+					<svg class="aaaaaaaaaaaaaaaa_15_b">
+						<rect id="aaaaaaaaaaaaaaaa_15_b" rx="10" ry="10" x="0" y="0" width="422" height="42">
+						</rect>
+					</svg>
+					<div id="Gruppe_34_b">
+						<svg class="aaaaaaaaaaaaaaaa_14_b">
+							<rect id="aaaaaaaaaaaaaaaa_14_b" rx="5" ry="5" x="0" y="0" width="109" height="27">
+							</rect>
+						</svg>
+						<div id="berweisen_b">
+							<span>Überweisen</span>
+						</div>
+					</div>
+				</div>
+				<div id="Nicht_verfgbar">
+					<span>Nicht verfügbar</span>
+				</div>
+			</div>
+		</div>
+		<div id="kontosss">
+			<div id="Kontostand_-_">
+				<span>Kontostand - </span>
+			</div>
+			<div id="n_324242_">
+				<span class="money"><span class="curbalance"></span><b><span class="dollars"> $</span>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    	<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    	<script type="text/javascript">
+    		$(function() {
+				window.addEventListener('message', function(event) {
+					if (event.data.type === "openGeneral"){
+		                $('body').show();
+					} else if(event.data.type === "balanceHUD") {
+							$('.username1').html(event.data.player);
+							$('.curbalance').html(event.data.balance);
+					} else if (event.data.type === "closeAll"){
+		                $('body').hide();
+					}
+					else if (event.data.type === "result") {
+						if (event.data.t == "success")
+							$("#result").attr('class', 'alert-green');
+						else
+							$("#result").attr('class', 'alert-orange');
+						$("#result").html(event.data.m).show().delay(5000).fadeOut();
+					}
+				});
+			});
+    		$('.btn-sign-out').click(function(){
+	            $('body').hide();
+	            $.post('http://SilenceV_Banking/NUIFocusOff', JSON.stringify({}));
+	        })
+	        $("#deposit1").submit(function(e) {
+		        e.preventDefault(); 
+		        $.post('http://SilenceV_Banking/deposit', JSON.stringify({
+		            amount: $("#amount").val()
+		        }));
+			});
+			$("#transfer1").submit(function(e) {
+		        e.preventDefault(); 
+		        $.post('http://SilenceV_Banking/transfer', JSON.stringify({
+					to: $("#to").val(),
+		            amountt: $("#amountt").val()
+		        }));
+			});
+			$("#withdraw1").submit(function(e) {
+				e.preventDefault(); 
+		        $.post('http://SilenceV_Banking/withdrawl', JSON.stringify({
+		            amountw: $("#amountw").val()
+		        }));
+			});
+			document.onkeyup = function(data){
+		        if (data.which == 27){
+		            $('body').hide();
+		            $.post('http://SilenceV_Banking/NUIFocusOff', JSON.stringify({}));
+		        }
+		    }
+    	</script>
+</body>
+</html>
